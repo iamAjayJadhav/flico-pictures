@@ -1,10 +1,17 @@
 import "./App.css"
-
+import Banner from "./components/Banner/Banner"
+import Header from "./components/Header/Header"
+import Navbar from "./components/Header/Navbar"
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Header />
+      <div className="App">
+        <Banner />
+        hjhbjhbjhbjhbjb hjhbjhbjhbjhbjb hjhbjhbjhbjhbjb hjhbjhbjhbjhbjb
+        <Navbar />
+      </div>
+    </>
   )
 }
 

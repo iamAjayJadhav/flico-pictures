@@ -1,0 +1,19 @@
+.headerContainer {
+  background-color: #f1faee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  border-bottom-style: inset;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  position: fixed;
+}
+.headerContainer__logo__img {
+  width: 70%;
+  height: 3rem;
+  object-fit: contain;
+}
