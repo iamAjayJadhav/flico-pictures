@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import Paper from "@mui/material/Paper"
 import BottomNavigation from "@mui/material/BottomNavigation"
 import BottomNavigationAction from "@mui/material/BottomNavigationAction"
-import SearchIcon from "@mui/icons-material/Search"
 import MovieIcon from "@mui/icons-material/Movie"
 import TvIcon from "@mui/icons-material/Tv"
 import WhatshotIcon from "@mui/icons-material/Whatshot"
@@ -16,11 +15,10 @@ export default function SimpleBottomNavigation() {
     if (value === 0) history.push("/")
     else if (value === 1) history.push("/movies")
     else if (value === 2) history.push("/series")
-    else if (value === 3) history.push("/serach")
   }, [value, history])
   return (
     <Paper
-      sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+      sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 100 }}
       elevation={3}
     >
       <BottomNavigation
@@ -45,11 +43,6 @@ export default function SimpleBottomNavigation() {
           style={{ color: "#e63946" }}
           label="T.V series"
           icon={<TvIcon />}
-        />
-        <BottomNavigationAction
-          style={{ color: "#e63946" }}
-          label="Search"
-          icon={<SearchIcon />}
         />
       </BottomNavigation>
     </Paper>
