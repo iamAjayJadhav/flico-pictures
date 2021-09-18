@@ -1,7 +1,7 @@
 import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
-
+import { img_00 } from "../../Config/Config"
 import "../Banner/Banner.css"
 
 export default function Banner() {
